@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire Top-up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🔥 Free Fire Top-up</h1>
+    <p>Fast • Safe • Trusted</p>
+</header>
+
+<section>
+
+<h2>🆔 Enter Free Fire UID</h2>
+
+<input type="text" id="uid"
+placeholder="Enter your Free Fire UID">
+
+<h2>💎 Select Diamond Package</h2>
+
+<div class="card package" data-package="100 Diamonds">💎 100 Diamonds - Rs. 100</div>
+
+<div class="card package" data-package="310 Diamonds">💎 310 Diamonds - Rs. 300</div>
+
+<div class="card package" data-package="520 Diamonds">💎 520 Diamonds - Rs. 500</div>
+
+<div class="card package" data-package="1060 Diamonds">💎 1060 Diamonds - Rs. 1000</div>
+</section>
+<h2>💳 Select Payment Method</h2>
+
+<select id="payment">
+    <option>Select Payment Method</option>
+    <option>eSewa</option>
+    <option>Khalti</option>
+    <option>IME Pay</option>
+</select>
+  <h2>📱 Scan QR to Pay</h2>
+<h2>📤 Upload Payment Screenshot</h2>
+
+  <div id="qrBox" style="display:none;">
+    <img id="qrImage" src="" alt="QR Code" width="250">
+</div>
+
+<h2>📤 Upload Payment Screenshot</h2>
+
+<input type="file" id="paymentProof" accept="image/*">
+
+<button id="submitOrder">✅ Submit Order</button>
+
+<p id="message"></p>
+
+  
+<a href="index.html">
+    <button>⬅ Back to Home</button>
+</a>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="firebase.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
